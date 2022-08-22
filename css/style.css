@@ -17,6 +17,7 @@
   body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background-color: #3a3838;
   }
   nav {
     display: flex;
@@ -117,7 +118,7 @@
     max-width: 360px;
     padding: 0 24px 24px;
     position: absolute;
-    top: 60px;
+    top: 61px;
     left: 0;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -158,7 +159,7 @@
     height: auto;
     position: absolute;
     /* padding: 25px; */
-    top: 60px;
+    top: 61px;
     right: 60px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -203,7 +204,7 @@
     padding: 0 24px 24px;
     box-sizing: border-box;
     position: absolute;
-    top: 60px;
+    top: 61px;
     right: 0;
     background-color: #2b2a2a;
     color: var(--very-light-pink);
@@ -277,6 +278,57 @@
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
+  }
+
+  main{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+  }
+  .product-card {
+    width: 240px;
+  }
+  .product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .cards-container .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .cards-container .product-info .addProduct {
+    margin: 0;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #d43648;
+  }
+  .cards-container .product-info .addProduct i {
+    font-size: 1.5rem;
+    color: var(--very-light-pink);
+  }
+  .cards-container .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: var(--very-light-pink);
+  }
+  .cards-container .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
   }
 
   @media (max-width: 700px) {
