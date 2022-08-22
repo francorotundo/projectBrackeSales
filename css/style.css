@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -86,8 +92,6 @@
   }
 
   .fa-cart-shopping {
-    /* width: auto;
-    height: auto; */
     font-size: 1.4rem;
     color: var(--very-light-pink);
   }
@@ -105,18 +109,57 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  .mobile-menu {
+    width: 100vw;
+    min-width: 280px;
+    max-width: 360px;
+    padding: 0 24px 24px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #2b2a2a;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    font-weight: bold;
+  }
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+  }
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+  }
+  .sign-out {
+    font-size: var(--sm);
+    color: #d43648 !important;
+  }
+
 /* ------Desktop Menu------- */
   .inactive {
     display: none;
   }
 
   .desktop-menu {
-    width: 100px;
+    width: 150px;
     height: auto;
     position: absolute;
+    /* padding: 25px; */
     top: 60px;
     right: 60px;
-    /* border: 1px solid var(--soft-red); */
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 20px 20px 0 20px;
@@ -151,9 +194,13 @@
   }
 
 
+
+
   .nav-product-detail {
-    width: 360px;
-    padding: 24px;
+    width: 100vw;
+    min-width: 280px;
+    max-width: 360px;
+    padding: 0 24px 24px;
     box-sizing: border-box;
     position: absolute;
     top: 60px;
@@ -165,6 +212,7 @@
   }
   .title-container {
     display: flex;
+    padding: 20px;
   }
   .title-container img {
     transform: rotate(180deg);
@@ -182,7 +230,7 @@
     background-color: #3a3838;
     margin-bottom: 24px;
     border-radius: 8px;
-    padding: 0 24px;
+    padding: 24px;
   }
   .order p:nth-child(1) {
     display: flex;
@@ -231,7 +279,7 @@
     height: 50px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     .fa-solid.fa-bars {
         display: block;
         font-size: 1.5rem;
@@ -247,6 +295,10 @@
     .product-detail {
       width: 100%;
     }
+    .desktop-menu {
+      display: none;
+    }
+
   }
 
   
