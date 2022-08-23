@@ -269,7 +269,7 @@
     font-weight: bold;
   }
   .primary-button {
-    background-color: #d43648;
+    background-color: #d21919;
     border-radius: 8px;
     border: none;
     color: var(--white);
@@ -309,9 +309,9 @@
   }
   .cards-container .product-info .addProduct {
     margin: 0;
-    padding: 7px;
+    padding: 10px;
     border-radius: 50%;
-    background-color: #d43648;
+    background-color: #d21919;
   }
   .cards-container .product-info .addProduct i {
     font-size: 1.5rem;
@@ -331,6 +331,65 @@
     color: var(--very-light-pink);
   }
 
+  .productDetail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px 10px 24px;
+    border-radius: 0 20px;
+    position: absolute;
+    right: calc(50% - 200px);
+    top: calc(50% - 280px);
+    background-color: #2b2a2a;
+    color: var(--very-light-pink);
+  }
+
+  .product-detail-close {
+    background: #2b2a2a;
+    width: 50x;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .productDetail > img:nth-child(2) {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 20px;
+  }
+  .productDetail .product-info {
+    margin: 24px 24px 0 24px;
+  }
+  .productDetail .product-info p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .productDetail .product-info p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .productDetail .product-info p:nth-child(3) {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @media (max-width: 700px) {
     .fa-solid.fa-bars {
         display: block;
@@ -349,6 +408,10 @@
     }
     .desktop-menu {
       display: none;
+    }
+    .productDetail {
+      right: 0;
+      top: 61px;
     }
 
   }
