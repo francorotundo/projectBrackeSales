@@ -17,7 +17,7 @@
   body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #3a3838;
+    background-color: var(--very-light-pink);
   }
   nav {
     display: flex;
@@ -280,16 +280,19 @@
     height: 50px;
   }
 
+
+
   main{
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    padding: 20px 20px 0;
+
   }
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 26px;
-    place-content: center;
+    place-items: center;
   }
   .product-card {
     width: 240px;
@@ -306,6 +309,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
+    color: #3a3838;
   }
   .cards-container .product-info .addProduct {
     margin: 0;
@@ -322,13 +326,13 @@
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
-    color: var(--very-light-pink);
+    /* color: var(--very-light-pink); */
   }
   .cards-container .product-info div p:nth-child(2) {
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--very-light-pink);
+    /* color: var(--very-light-pink); */
   }
 
   .productDetail {

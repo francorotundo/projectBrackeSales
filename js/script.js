@@ -142,7 +142,6 @@ function renderProducts(arr){
     
         cardContainer.append(productCard);
     }
-    console.log(arr);
 }
 
 function renderProductInfo(name, photo, price, detail){
@@ -154,7 +153,7 @@ function renderProductInfo(name, photo, price, detail){
     productDetailClose.classList.add("product-detail-close");
 
     const closeProduct = document.createElement("img");
-    closeProduct.setAttribute("src", '../icons/icon_close.png');
+    closeProduct.setAttribute("src", './icons/icon_close.png');
     closeProduct.setAttribute("alt", "close");
     closeProduct.classList.add("close");
 
